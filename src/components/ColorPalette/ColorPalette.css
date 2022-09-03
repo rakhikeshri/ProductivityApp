@@ -1,0 +1,141 @@
+.colors-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+    padding-bottom: 50px;
+}
+.single-card {
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+.single-card .content{
+    text-align: center;
+    padding: 8px 25px;
+    border-radius: 10px;
+    display: none;
+}
+.single-card p {
+    margin: 0;
+    color: #0d0d0d;
+    font-weight: 600;
+}
+.single-card:hover {
+    transform: scale(1.05 );
+}
+.single-card:hover .content {
+    background: #d6d6dc9c;
+    display: block;
+
+}
+.single-card button {
+    background-color: transparent;
+    border: 0px;
+    border-radius: 9px;
+    width: 42px;
+    padding: 5px 6px;
+    cursor: pointer;
+    margin-top: 7px;
+}
+.single-card button img {
+    width: 100%;
+}
+.copy-alert {
+    font-size: 12px;
+    color: gray;
+    position: absolute;
+    bottom: 10px;
+}
+.form-color {
+    text-align: center;
+    margin: 4% 0%;
+}
+.form-color h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #000;
+    text-shadow: 2px 3px 0px #fff;
+}
+.colorPalette-form{
+    width: 50%;
+    margin: auto;
+}
+.colorPalette-form input{
+    margin-top: 15px;
+}
+.form-color input[type="text"] {
+    font-size: inherit;
+    padding: 9px 12px;
+    outline: none;
+    border: 2px solid rgb(54, 54, 54);
+    border-radius: 10px;
+}
+.form-color input[type="submit"] {
+    border: 0;
+    outline: none;
+    padding: 9px 10px;
+    border-radius: 10px;
+    background-color: rgb(31, 31, 31);
+    color: rgb(41, 134, 134);
+    transition: 0.3s;
+    cursor: pointer;
+}
+.form-color input[type="submit"]:hover {
+    background-color: rgb(23, 222, 222);
+    color: #000;
+    font-weight: 600;
+}
+
+.form-color form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.error {
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    background-color: red;
+    width: fit-content;
+    margin: 30px auto 0px;
+    padding: 4px 11px;
+    border-radius: 8px;
+}
+
+p.author {
+    display: flex;
+    justify-content: center;
+    FONT-VARIANT: JIS04;
+    margin-top: 3%;
+    gap: 7px;
+}
+p.author a {
+    text-decoration: none;
+    font-weight: 700;
+    color: #000;
+}
+
+@media screen and (max-width: 600px){
+    .form-color h1 {
+        font-size: 2.5rem;
+        padding-bottom: 3px;
+    }
+    .form-color input[type="submit"] {
+        padding: 7px;
+        border-radius: 7px;
+    }
+    .form-color input[type="text"] {
+        font-size: inherit;
+        padding: 5px 8px;
+        border-radius: 7px;
+    }
+}

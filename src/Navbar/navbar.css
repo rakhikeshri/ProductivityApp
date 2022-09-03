@@ -1,0 +1,181 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 65px;
+    background-color: rgb(52, 52, 52);
+}
+
+.active{
+    font-weight: 600;
+}
+.logo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: rgb(1, 226, 226);
+    margin-left: 10px;
+    cursor: pointer;
+}
+.logoLink{
+    text-decoration: none;
+}
+
+.icon{
+    margin-right: 5px;
+    margin-left: 7px;
+    font-size: 35px;
+}
+
+.logo h4{
+    color: white;
+    margin-top: 5px;
+    font-size: 34px;
+}
+
+.navLink{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    width: 80%;
+}
+
+li{
+    list-style: none;
+}
+
+.navLink ul{
+    height: 7rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.home,
+.accordian,
+.notesapp,
+.color,
+.budgets,
+.todos{
+    text-decoration: none;
+    color: aqua;
+    font-size: 18px;
+    padding: 20px;
+    margin: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.navLink ul li:hover{
+    transform-origin: left;
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.hamburger{
+    display: none;
+}
+
+/* --------------------------- media query ---------------------------- */
+
+@media screen and (max-width: 1203px){
+    .home,
+    .accordian,
+    .notesapp,
+    .color,
+    .budgets,
+    .todos{
+        font-size: 17px;
+        padding: 5px;
+    }
+    .navLink ul li:hover{
+        font-size: 16px;
+    }
+    .icon{
+        font-size: 29px;
+    }
+    .logo h4{
+        font-size: 27px;
+    }
+    .navlink{
+        margin-right: 0;
+    }
+}
+@media screen and (max-width: 931px){
+    .home,
+    .accordian,
+    .notesapp,
+    .color,
+    .budgets,
+    .todos{
+        font-size: 16px;
+        padding: 5px;
+    }
+    .navLink ul li:hover{
+        font-size: 14.5px;
+    }
+    .icon{
+        font-size: 28px;
+    }
+    .logo h4{
+        font-size: 27px;
+    }
+    .navlink{
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 871px){
+    .navLink{
+        display: none;
+    }
+
+    .mobileNavLink{
+        position: absolute;
+        display: block;
+        list-style: none;
+        background-color: black;
+        left: 0;
+        top: 55px;
+        transition: 0.5s;
+        width: 100%;
+        z-index: 1000;
+    }
+    .home,
+    .accordian,
+    .notesapp,
+    .color,
+    .budgets,
+    .todos{
+        margin: 20px;
+        font-size: 16px;
+        padding: 40px;
+        width: 100%;
+        color: aqua;
+        text-align: center;
+        transition: all 0.5s ease;
+    }
+    
+    .hamburger{
+        display: block;
+        position: absolute;
+        font-size: 28px;
+        color: rgb(23, 222, 222);
+        top: 15px;
+        right: 25px;
+        margin-top: 6px;
+    }
+    
+}

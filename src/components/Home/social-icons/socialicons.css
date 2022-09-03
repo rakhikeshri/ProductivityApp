@@ -1,0 +1,35 @@
+.header__socials{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 0 15px;
+}
+.header__socials a{
+    color: rgb(1, 99, 99);
+    font-size: 1.2rem;
+}
+.header__socials a:hover{
+    color: rgb(4, 161, 161);
+}
+.line{
+    border: 0.2px solid rgb(1, 99, 99);
+    height: 50px;
+}
+
+
+@media screen and (max-width: 830px){
+    .line{
+        display: none;
+    }
+    .header__socials{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0 ;
+    }
+    .header__socials a{
+        font-size: 1.5rem;
+    }
+    
+}

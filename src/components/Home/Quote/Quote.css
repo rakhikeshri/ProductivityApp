@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Thasadith&display=swap');
+
+.quote-box{
+    text-align: center;
+}
+
+.quotes{
+    font-size: 2rem;
+    padding-top: 10px;
+    color: rgb(2, 129, 129);
+    font-family: 'Thasadith', sans-serif;
+}
+@media screen and (max-width: 600px){
+    .quotes{
+        font-size: 1.7rem;
+    }
+}

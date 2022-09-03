@@ -1,0 +1,265 @@
+:root {
+	--light: #ffffff;
+	--dark: #313131;
+	--grey: #888;
+	--primary: rgb(1, 226, 226);
+	--secondary: #ffffff;
+	--alert: #FF1E2D;
+}
+
+.budgets-container {
+	width: 90 vw;
+    margin: 100px auto;
+    max-width: 60rem;
+    margin-top: 6rem;
+    background: #fff;
+    border-radius: 0.25rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s linear;
+    padding: 2rem;
+}
+
+.budgets-header{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 1.5rem;
+}
+
+.budgets-title {
+	color: var(--grey);
+	font-size: 35px;
+	font-weight: 600;
+	text-align: left;
+	padding-top: 3px;
+}
+
+.total-expense {
+	color: var(--grey);
+	font-size: 22px;
+	font-weight: 900;
+	background-color: #eaeaea;
+	padding: 5px 15px;
+	padding-top: 8px;
+	border-radius: 8px;
+}
+
+.form-inner {
+	position: relative;
+	z-index: 1;
+	display: flex;
+	transition: 0.4s;
+	border-radius: 8px;
+	border: 3px solid #fff;
+	border-radius: 10px;
+}
+
+.form-inner:hover{
+	border: 3px solid rgb(1, 226, 226);
+	transition: 0.3s;
+}
+
+.inputs-budgets{
+	font-size: 1.3em;
+	border: none;
+	outline: none;
+	background: none;
+	max-width: fit-content;
+	font-weight: 600;
+}
+
+.date{
+	color: var(--grey);
+}
+
+.desc{
+	margin-left: 0;
+	max-width: 80%;
+}
+.price{
+	max-width: 15%;
+}
+.no-expense{
+	text-align:center;
+	margin:auto; 
+	text-transform: uppercase; 
+	color: var(--grey);
+	font-size: 18px;
+	padding: 10px;
+}
+.submit{
+	border-radius: 0px 8px 8px 0px;
+	cursor: pointer;
+	background-image: linear-gradient(to right, var(--primary) 50%, var(--primary) 50%, var(--secondary));
+	background-size: 200%;
+	background-position: 0%;
+	font-weight: 600;
+	font-size: 1.2rem;
+	color: var(--dark);
+	text-transform: uppercase;
+	padding: 0 40px;
+	padding-top: 5px;
+	transition: 0.4s;
+	color: var(--light);
+	margin-right: 0;
+}
+.submit:hover {
+	background-position: 100%;
+	color: var(--dark);
+}
+
+.expense-list {
+	padding: 10px ; 
+}
+.expense-item {
+	position: relative;
+	padding: 10px 15px;
+	background-color: #FFF;
+	border-radius: 8px;
+	margin-bottom: 15px;
+	display: flex;
+	transition: 0.4s;
+	padding-left: 50px;
+	font-size: 1.3rem;
+}
+
+.expense-list .expense-item .remove-item {
+	position: absolute;
+	width: 0;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	overflow: hidden;
+
+	cursor: pointer;
+	display: block;
+	color: var(--light);
+	font-weight: 900;
+	border: 2px solid var(--primary);
+	background-color: var(--alert);
+	border-radius: 8px 0px 0px 8px;
+	transition: 0.2s;
+	outline: none;
+	font-size: 26px;
+}
+.expense-list .expense-item:hover .remove-item {
+	width: 40px;
+	border: 0;
+}
+.added-desc{
+	width: 49%;
+	text-transform: uppercase;
+}
+.added-price{
+	width: 30%;
+}
+.added-date{
+	text-align: right;
+	width: 20%;
+}
+
+.clear-all{
+	color: var(--grey);
+	font-size: 13px;
+	font-weight: 900;
+	background-color: #eaeaea;
+	padding: 8px;
+	text-transform: uppercase;
+	padding-bottom: 6px;
+	border-radius: 8px;
+	border: none;
+	cursor: pointer;
+	display: flex;
+	margin: auto;
+	margin-top: 40px;
+}
+
+.clear-all:hover{
+	background-color: var(--grey);
+	color: var(--light);
+	transition: 0.5s;
+}
+
+
+@media screen and (max-width: 520px){
+	.clear-all{
+		margin-bottom: 9px;
+	}
+}
+@media screen and (max-width: 756px){
+	.budgets-container {
+		padding: 2rem;
+	}
+	.inputs-budgets{
+		font-size: 1.1em;
+		font-weight: 600;
+	}
+	.submit{
+		font-size: 1rem;
+	}
+	.budgets-title {
+		font-size: 30px;
+	}
+	.total-expense {
+		font-size: 20px;
+		font-weight: 900;
+	}
+}
+@media screen and (max-width: 526px){
+	.budgets-container {
+		padding: 2rem;
+	}
+	.date{
+		max-width: 30%;
+	}
+	.inputs-budgets{
+		font-size: 1em;
+		font-weight: 600;
+	}
+	.price{
+		padding-right: 5px;
+	}
+	.submit{
+		font-size: .9em;
+		padding: 0 20px;
+	}
+	.no-expense{
+		font-size: 13px;
+	}
+}
+@media screen and (max-width: 470px){
+	.budgets-container{
+		padding: .5rem;
+		padding-top: 1rem;
+	}
+	.budgets-title {
+		font-size: 26px;
+	}
+	.total-expense {
+		font-size: 17px;
+		font-weight: 900;
+	}
+
+	.inputs-budgets{
+		font-size: 1em;
+	}
+	.desc{
+		font-size: 1em;
+		letter-spacing: .5px;
+
+	}
+	.submit{
+		font-size: .9em;
+		padding: 0 10px;
+	}
+	.expense-item{
+		font-size: 1rem;
+		padding-left: 35px;
+	}
+	.expense-list .expense-item:hover .remove-item {
+		width: 30px;
+		border: 0;
+	}
+
+}
+
+	

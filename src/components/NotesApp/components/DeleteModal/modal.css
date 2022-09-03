@@ -1,0 +1,68 @@
+.modalBackground {
+    width: 100vw;
+    min-height: 100vh;
+    background-color: rgb(234, 248, 255);
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -80px;
+  }
+  
+  .modalContainer {
+    width: 250px;
+    height: 150px;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 18px 24px;
+    margin-top: -40px;
+  }
+  
+  .modalContainer .title {
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .titleCloseBtn {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .titleCloseBtn button {
+    background-color: transparent;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+  }
+  
+  .modalContainer .footer {
+    flex: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .title{
+    margin-bottom: 5px;  
+  }
+  .modalContainer .footer button {
+    width: 55px;
+    height: 30px;
+    margin: 0px 10px;
+    border: none;
+    color: black;
+    font-weight: 600;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: aqua;
+    box-shadow: rgba(220, 113, 113, 0.5) 0px 5px 15px;
+  }
+  
+  .modalContainer .footer button:hover{
+    background-color: #0aa596;
+    color: #fff;   
+  }
