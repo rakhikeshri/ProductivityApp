@@ -7,8 +7,8 @@ const SocialIcons = () => {
   return (
     <div className='header__socials'>
         <div className='line'></div>
-        <a href="https://linkedin.com" targer="_blank"><BsLinkedin /></a>
-        <a href="https://github.com" targer="_blank"><FaGithub /></a>
+        <a href="https://www.linkedin.com/in/rakhi-keshri-1a3018214/" targer="_blank"><BsLinkedin /></a>
+        <a href="https://github.com/rakhikeshri" targer="_blank"><FaGithub /></a>
         <div className='line'></div>
     </div>
   )
