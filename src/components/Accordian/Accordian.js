@@ -27,7 +27,7 @@ export const Accordian = () => {
                     <input type='text' className='search-qa' placeholder='search the questions/answers..' onChange={(e) => setSearchQa(e.target.value)} />
                     <MdSearch className='search-icon' size = '1.5em' />
                     </div>
-                    {questions.filter((question) => question.question.toLowerCase().includes(searchQa)).slice(pagesVisited, pagesVisited + qaPerPage).map((question) => {
+                    {questions.filter((question) => question.question.toLowerCase().includes(searchQa.toLowerCase())).slice(pagesVisited, pagesVisited + qaPerPage).map((question) => {
                         return <AccordianDisplay key={question.id} {...question} />
                     })}
                     <ReactPaginate
