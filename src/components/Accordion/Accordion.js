@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { AccordionDisplay } from './AccordionDisplay';
 import { data } from './qadata'
 import { MdSearch } from 'react-icons/md'
-import './Accordion.css';
+import './accordion.css';
 import ReactPaginate from 'react-paginate';
 
 export const Accordion = () => {

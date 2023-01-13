@@ -34,7 +34,7 @@ const Navbar = () => {
             <li>COLOR PALETTE</li>
           </NavLink>
           <NavLink className="Accordion" to="/Accordion"> 
-            <li>ACCORDIAN</li>
+            <li>ACCORDION</li>
           </NavLink>
         </ul>
       </div>

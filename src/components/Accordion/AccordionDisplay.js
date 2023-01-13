@@ -1,4 +1,4 @@
-import './Accordion.css'
+import './accordion.css'
 import React, { useState } from 'react'
 export const AccordionDisplay = ({ question, answer }) =>{
     const [showInfo, setShowInfo] = useState(false)
