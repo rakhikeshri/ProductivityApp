@@ -1,6 +1,6 @@
-import './accordian.css'
+import './Accordion.css'
 import React, { useState } from 'react'
-export const AccordianDisplay = ({ question, answer }) =>{
+export const AccordionDisplay = ({ question, answer }) =>{
     const [showInfo, setShowInfo] = useState(false)
     return(
         <article className="single-qa">

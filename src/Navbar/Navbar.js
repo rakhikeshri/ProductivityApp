@@ -33,7 +33,7 @@ const Navbar = () => {
           <NavLink className="color" to="/colorpalette"> 
             <li>COLOR PALETTE</li>
           </NavLink>
-          <NavLink className="accordian" to="/accordian"> 
+          <NavLink className="Accordion" to="/Accordion"> 
             <li>ACCORDIAN</li>
           </NavLink>
         </ul>

@@ -62,7 +62,7 @@ li{
 }
 
 .home,
-.accordian,
+.Accordion,
 .notesapp,
 .color,
 .budgets,
@@ -92,7 +92,7 @@ li{
 
 @media screen and (max-width: 1203px){
     .home,
-    .accordian,
+    .Accordion,
     .notesapp,
     .color,
     .budgets,
@@ -115,7 +115,7 @@ li{
 }
 @media screen and (max-width: 931px){
     .home,
-    .accordian,
+    .Accordion,
     .notesapp,
     .color,
     .budgets,
@@ -154,7 +154,7 @@ li{
         z-index: 1000;
     }
     .home,
-    .accordian,
+    .Accordion,
     .notesapp,
     .color,
     .budgets,

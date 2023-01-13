@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import { AccordianDisplay } from './AccordianDisplay';
+import { AccordionDisplay } from './AccordionDisplay';
 import { data } from './qadata'
 import { MdSearch } from 'react-icons/md'
-import './accordian.css';
+import './Accordion.css';
 import ReactPaginate from 'react-paginate';
 
-export const Accordian = () => {
+export const Accordion = () => {
     const [questions, setQuestions] = useState(data)
     const [searchQa, setSearchQa] = useState('')
     const [pageNo, setPageNo] = useState(0)
@@ -28,7 +28,7 @@ export const Accordian = () => {
                     <MdSearch className='search-icon' size = '1.5em' />
                     </div>
                     {questions.filter((question) => question.question.toLowerCase().includes(searchQa.toLowerCase())).slice(pagesVisited, pagesVisited + qaPerPage).map((question) => {
-                        return <AccordianDisplay key={question.id} {...question} />
+                        return <AccordionDisplay key={question.id} {...question} />
                     })}
                     <ReactPaginate
                         previousLabel={"Prev"}
